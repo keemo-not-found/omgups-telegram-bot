@@ -71,7 +71,7 @@ def handle_date_selection(update: Update, context: CallbackContext) -> None:
     send_timetable(update, context, timetable, date)
 
 def main() -> None:
-    application = ApplicationBuilder().token("7594024235:AAHYdCtFUFn7E1x4yMe1weYaJvMKzToeR7g").build()
+    application = ApplicationBuilder().token("TOKEN HERE").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
